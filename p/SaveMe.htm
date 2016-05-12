@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">body{margin:1em auto;max-width:40em;padding:0 .62em;font:1.2em/1.62em sans-serif;}h1,h2,h3{line-height:1.2em;}</style>
+	<title>Truth or dare: can you save this web page</title>
+</head>
+
+<body>
+	<h1>Truth or dare: can you save this web page</h1>
+
+	<p>When I was small and computers were big, my first experience with HTML was playing with background and text colors in the Word, and discovering that it can export my document into HTML. The resulted source code was a mess. Nevertheless, it was interesting to poke around it and "hack" stuff, that's compared to selecting a chunk of text in Word and pressing a button to make it red. Some time later I've asked my parents to save this web site with HTML tutorials onto floppy disks from their workplace. The result was one disk with only one page saved on it: the index page. That is to say, I'm not making fun of them and they were not computer illiterate. But admit it, you had someone once trying to move a file from a floppy disk onto a desktop and creating a shortcut to A:\the_file instead of actually copying it, or some variation of it. It was going on for years, and probably still does. At least one certain company acknowledged this with application packages.</p>
+
+	<p>So let me ask you: what is it, exactly, we are trying to achieve with the Web? It is slow and very bandwidth hungry. There are myriads incompatibilities between browsers and there will be much more. The web apps are a joke in terms of functionality, and they still won't work offline. The list goes on and on. Let's explore only one item from it: saving a web page.</p>
+
+	<h2>The setup</h2>
+	<p>
+		<dl>
+			<dt>What</dt> <dd>Save a web page</dd>
+			<dt>Why</dt> <dd>So that the content won't be lost and/or to read it later on my smartphone (note: in the first case, if you say "use a Wayback Machine", consider that it may go away anytime, or it may have not the link archived at all. maybe not yet, or maybe robots.txt prevented it)</dd>
+			<dt>Computer</dt> <dd>Linux with Firefox and Chrome</dd>
+			<dt>Smarthphone</dt> <dd>iPhone 4s, iOS 9</dd>
+		</dl>
+	</p>
+
+	<h2>The first, simple use case</h2>
+	<p>In accordance with time, you're on your phone and want to save a page. Make it this one: <a href="https://m.reddit.com/r/programming/comments/4itqbk/electron_10_is_here/">m.reddit.com/r/programming/comments/4itqbk/electron_10_is_here</a>. So you tap "Add to Reading List" in Safari, wait an unknown amount of time until it's saved, because you want to make sure before turning off Wi-Fi, all the while the page is on the list and appears to be saved (it's a lie).</p>
+
+	<p>Alright, one minute was enough. Oh cool, it's saved! Wait, no. Somehow it managed to save two pages: the one I wanted and the one I came from before, that is where I found this discussion among others. So when you open it from the reading list, it loads your page and redirects back immediately. That's Single Page Applications for you.</p>
+	
+	<p>Fine. If you're like me, you don't like mobile versions of the sites anyway and tap "Request Desktop Site" (and hope it will work and not ignored, of course), or "Desktop Site" reddit-provided link and save the normal page (by the way, it didn't work either just about 4 months ago). But do you expect the same people that don't know the difference between an OS and a browser to know to tap something that starts with a scary "Request" to workaround this?</p>
+
+	<h2>Moving on</h2>
+	<p>Let's relax, take a breath and quickly nitpick on a mobile, iOS Firefox. It has the same reading list feature and it bugs me even more than Safari's.</p>
+	
+	<p>First off, it may save nothing at all. It's random. It's not a 50/50, but certainly a 10/90. There's no known amount of time you have to wait to save the page, and there may be no time at all as it will save nothing. Resaving helps, though.</p>
+	
+	<p>And as it was not enough of a randomness, there's a problem with how it saves pages. It has a reading mode, where Firefox tries hard to strip the page of anything nonessential and present you with a readable, clean page with a primary content only. So no menus, big headings with pictures, etc. It doesn't always succeed, as it may strip away pictures, or &lt;pre&gt; tags with its whole content. That's why I don't like it and try to switch back to a normal version of the page. Interestingly, before you'll be able to save it, you have to switch to reading mode and then tap at the same place again to actually save it. Now, reasonably after this, you can't complain if you'll try to open it after saving and see the reading mode version, and after trying to turn it off it will tell that the content is not available. Except sometimes it is available. What version does it actually save (both?) and why the normal one doesn't always work? Random.</p>
+
+	<h2>Next!</h2>
+	<p>But all of the described before is not how I usually discover links. Nor how do I save them now, because they may not. Usually I'm on my laptop, quickly skimming through some of my daily sites from Chrome, copy links to Firefox, bookmark it, and let it synchronize with the mobile Firefox. Next, I go link over link manually and save it. Much fun, very effective.</p>
+	
+	<p>Now I'm saving everything in PDF and transfer the files. Oh, and good luck generating PDFs from Windows.</p>
+
+	<p>As if PDF actually solves anything. Sure, it's better than a simple Ctrl+S in Chrome, that won't bother saving any external file that this page depends on, read: CSS and images. And if you want read Disqus comments after some article for a deeper input from others, you're out of luck, too. Try it out: <a href="http://jvns.ca/blog/2014/11/27/ld-preload-is-super-fun-and-easy/">jvns.ca/blog/2014/11/27/ld-preload-is-super-fun-and-easy</a>. Firefox is good here, as of now, but it didn't save it either not too long before. And don't forget about our average computer user, that has to know to save it in PDF, and not doing a simple Ctrl+S. Not that Ctrl+S in Firefox will help if they to transfer two files, ThePage.html and ThePage/ directory (oh god!), to their iOS-powered phone: how do you open it? No, how do you transfer it in the first place?!</p>
+	
+	<p>So no, PDF does not solve anything. Case in point: <a href="http://fabiensanglard.net/doom3/renderer.php">fabiensanglard.net/doom3/renderer.php</a>. Scroll down a bit till the image with a blue light, with a caption saying "Pass 1: Blue light". This image will be a black square if you to save this link in PDF (remember my setup: Chrome on Linux. YMMV). But even if it wasn't, see those 1 2 3 buttons with arrows below it? Try clicking them. They won't work in PDF.</p>
+	
+	<p>But we are still not out of surprises. You see, this, without an irony a great writeup is split into six parts. Here's the very first one <a href="http://fabiensanglard.net/doom3/">fabiensanglard.net/doom3</a>. Now scroll down. See how the images are flickering? That's lazy loading, that will load an image from the server only if you to actually look at it. This mechanism reduces the load on the server, allegedly, and many sites do that. But if you were to save all the six parts in PDF... Go ahead and try just one. There are no images at all. Not until you scroll every page to the end.</p>
+
+	<p>Ok, got to stop now.</p>
+
+	<h2>Just one more example</h2>
+	<p>And it involves saving user comments again, but the issue preventing it is a bit different. Click: <a href="https://www.quantamagazine.org/20160428-entanglement-made-simple/">quantamagazine.org/20160428-entanglement-made-simple</a>. Scroll. "READER COMMENTS", check. Ctrl+P. Layout: landscape; paper size: A4. Scroll. "VIEW READER COMMENTS (30)", what? But how do I... It's not clickable. Simple, just change the paper size to A3.</p>
+	
+	<p>Don't want to, you want an A4? Well, you asked for it.
+		<ol>
+			<li>Close the print dialog;</li>
+			<li>Press Ctrl+Shift+M;</li>
+			<li>On the left upper corner, choose "Apple iPhone 4" device;</li>
+			<li>Scroll to the comments;</li>
+			<li>Click "VIEW READER COMMENTS (30)";</li>
+			<li>Press Ctrl+P again;</li>
+			<li>Explain these steps to a user that types "amazon" into google in order to get to amazon.com;</li>
+			<li>Laugh hysterically;</li>
+			<li>Profit? I'm not sure. You know the saying, the end and the means, all that.</li>
+		</ol>
+		Page layout responsiveness, deal with it.</p>
+
+	<h2>/rant</h2>
+	<p>Sorry for a change of the writing style pace in the end. I know that's a style that would annoy me while reading something like that. But believe me when I say this, gathering the words for all this and testing presented examples annoyed me much more than you reading this.</p>
+
+	<p>
+		Did I miss anything? Of this, is there something especially important? Of course.
+		<ul>
+			<li>Don't expect PDF files to have hyperlinks, they may or may not;</li>
+			<li>That last example? Try to make it work in mobile Safari;</li>
+			<li>There's a great Firefox extension, ScrapBook Plus: <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus</a>. It does not guaranty hiccup free experience and does not solve every problem stated here, but it's nice nevertheless. Unfortunately, it's out of date and I don't remember how I made it work with later Firefox version. Here's a version 2 of this addon, <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2</a>. But it's in alpha and I've never used it;</li>
+			<li>Firefox, Windows, 32-bit only "Print pages to PDF" addon: <a href="http://printpagestopdf.hol.es/index.php/en/help.html">printpagestopdf.hol.es/index.php/en/help.html</a>. I remember it embedding clickable hyperlinks into PDF.</li>
+		</ul>
+	</p>
+
+	<p>Yes. The answer to your question? If there's a solution to this? Yes. There is. Here's one: <a href="https://en.wikipedia.org/wiki/Project_Xanadu">en.wikipedia.org/wiki/Project_Xanadu</a>. Now, I did not explore it much, but it's a question of how one would implement any simple, but interactive element in it, like you saw here, with a slideshow: <a href="http://fabiensanglard.net/doom3/renderer.php">fabiensanglard.net/doom3/renderer.php</a>. There are interactive PDFs with bells and JavaScripts, but its riddled with exploits and vulnerabilities. And on the other hand, you can't predefine every possible usable interactive element in a spec. Purely functional programmability, maybe?</p>
+
+	<hr/>
+
+	<p>"Design" courtesy of <a href="https://bestmotherfucking.website">bestmotherfucking.website</a></p>
+
+	<p>May 2016, <a href="http://ltp.name">ltp.name</a></p>
+</body>
+</html>
