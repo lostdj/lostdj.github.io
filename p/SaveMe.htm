@@ -18,7 +18,7 @@
 	<p>
 		<dl>
 			<dt>What</dt> <dd>Save a web page</dd>
-			<dt>Why</dt> <dd>So that the content won't be lost and/or to read it later on my smartphone (note: in the first case, if you say "use a Wayback Machine", consider that it may go away anytime, or it may have not the link archived at all. maybe not yet, or maybe robots.txt prevented it)</dd>
+			<dt>Why</dt> <dd>So that the content won't be lost and/or to read it later on my smartphone (note: in the first case, if you say "use a Wayback Machine", consider that it may go away anytime, or it may have not archived the link at all. maybe not yet, or maybe robots.txt prevented it)</dd>
 			<dt>Computer</dt> <dd>Linux with Firefox and Chrome</dd>
 			<dt>Smarthphone</dt> <dd>iPhone 4s, iOS 9</dd>
 		</dl>
@@ -47,7 +47,7 @@
 	
 	<p>So no, PDF does not solve anything. Case in point: <a href="http://fabiensanglard.net/doom3/renderer.php">fabiensanglard.net/doom3/renderer.php</a>. Scroll down a bit till the image with a blue light, with a caption saying "Pass 1: Blue light". This image will be a black square if you to save this link in PDF (remember my setup: Chrome on Linux. YMMV). But even if it wasn't, see those 1 2 3 buttons with arrows below it? Try clicking them. They won't work in PDF.</p>
 	
-	<p>But we are still not out of surprises. You see, this, without an irony a great writeup is split into six parts. Here's the very first one <a href="http://fabiensanglard.net/doom3/">fabiensanglard.net/doom3</a>. Now scroll down. See how the images are flickering? That's lazy loading, that will load an image from the server only if you to actually look at it. This mechanism reduces the load on the server, allegedly, and many sites do that. But if you were to save all the six parts in PDF... Go ahead and try just one. There are no images at all. Not until you scroll every page to the end.</p>
+	<p>But we are still not out of surprises. You see, this, without an irony a great writeup is split into six parts. Here's the very first one <a href="http://fabiensanglard.net/doom3/">fabiensanglard.net/doom3</a>. Now scroll down. See how the images are flickering? That's lazy loading, that will load an image from the server only if you to actually look at it. This mechanism reduces the load on the server, allegedly, and many sites do that. But if you were to save all the six parts in PDF... Go ahead and try just one. There are no images at all. Not until you scroll every page to the bottom.</p>
 
 	<p>Ok, got to stop now.</p>
 
@@ -76,12 +76,12 @@
 		<ul>
 			<li>Don't expect PDF files to have hyperlinks, they may or may not;</li>
 			<li>That last example? Try to make it work in mobile Safari;</li>
-			<li>There's a great Firefox extension, ScrapBook Plus: <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus</a>. It does not guaranty hiccup free experience and does not solve every problem stated here, but it's nice nevertheless. Unfortunately, it's out of date and I don't remember how I made it work with later Firefox version. Here's a version 2 of this addon, <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2</a>. But it's in alpha and I've never used it;</li>
+			<li>There's a great Firefox extension, ScrapBook Plus: <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus</a>. It does not guarantee hiccup free experience and does not solve every problem stated here, but it's nice nevertheless. Unfortunately, it's out of date and I don't remember how I made it work with later Firefox version. Here's a version 2 of this addon, <a href="https://addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2/">addons.mozilla.org/en-US/firefox/addon/scrapbook-plus-2</a>. But it's in alpha and I've never used it;</li>
 			<li>Firefox, Windows, 32-bit only "Print pages to PDF" addon: <a href="http://printpagestopdf.hol.es/index.php/en/help.html">printpagestopdf.hol.es/index.php/en/help.html</a>. I remember it embedding clickable hyperlinks into PDF.</li>
 		</ul>
 	</p>
 
-	<p>Yes. The answer to your question? If there's a solution to this? Yes. There is. Here's one: <a href="https://en.wikipedia.org/wiki/Project_Xanadu">en.wikipedia.org/wiki/Project_Xanadu</a>. Now, I did not explore it much, but it's a question of how one would implement any simple, but interactive element in it, like you saw here, with a slideshow: <a href="http://fabiensanglard.net/doom3/renderer.php">fabiensanglard.net/doom3/renderer.php</a>. There are interactive PDFs with bells and JavaScripts, but its riddled with exploits and vulnerabilities. And on the other hand, you can't predefine every possible usable interactive element in a spec. Purely functional programmability, maybe?</p>
+	<p>Yes. The answer to your question? If there's a solution to this? Yes. There is. Here's one: <a href="https://en.wikipedia.org/wiki/Project_Xanadu">en.wikipedia.org/wiki/Project_Xanadu</a>. Now, I did not explore it much, but it's a question of how one would implement any simple, but interactive element in it, like you saw here, with a slideshow: <a href="http://fabiensanglard.net/doom3/renderer.php">fabiensanglard.net/doom3/renderer.php</a>. There are interactive PDFs with bells and JavaScripts, but it's riddled with exploits and vulnerabilities. And on the other hand, you can't predefine every possible usable interactive element in a spec. Purely functional programmability, maybe?</p>
 
 	<hr/>
 	
